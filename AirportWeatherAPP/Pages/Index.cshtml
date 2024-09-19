@@ -4,19 +4,58 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Airport Weather Center</h1>
+<body>
+    <!--Main Title-->
+    <div class="text-center">
+        <h1 class="display-4">Airport Weather Center</h1>
 
-    <hr /> 
+        <!--horizontal line tag-->
+        <hr />
+    </div>
 
-    <a href="https://cdn-icons-png.flaticon.com/512/7137/7137989.png">
-        <img src="https://cdn-icons-png.flaticon.com/512/7137/7137989.png" alt="A Windstock" id="windstockpic" />
-    </a>
+    <!--Carousel-->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" style="width: 60%; margin: auto;">
+        
+        <!--dots on carousel-->
+        <div> 
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
 
-    <hr />
+        <!--Images for carousel-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn-icons-png.flaticon.com/512/7137/7137989.png" alt="Windstock" id="WindStockPic" />
+            </div>
+            <div class ="carousel-item">
+                <img src="https://www.shutterstock.com/image-vector/schiphol-airport-amsterdam-airline-vector-600nw-2093726923.jpg" alt="ControlTower" id="ControlTowerPic" />
+            </div>
+            <div class ="carousel-item">
+                <img src="https://img.freepik.com/premium-vector/cloud-rain-storm-icon-simple-illustration-cloud-rain-storm-vector-icon-web_98396-4234.jpg" alt="RainCloud" id="RainCloudPic" />
+            </div>
+        </div>
 
-    <h3>
-        Delivering real-time, accurate airport weather data to enhance travel planning and operational efficiency for both travelers and aviation professionals.
-    </h3>
+        <!--Right/Left arrow buttons-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
 
-</div>
+    <div class="text-center">
+        <!--horizontal line tag-->
+        <hr />
+
+        <!--two line break tags-->
+        <br />
+        <br />
+
+        <!--Main message on home page-->
+        <h3>
+            Delivering real-time, accurate airport weather data to enhance travel planning and operational efficiency for both travelers and aviation professionals.
+        </h3>
+    </div>
+</body>
