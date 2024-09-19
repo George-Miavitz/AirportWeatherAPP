@@ -3,4 +3,31 @@
 @{
 }
 
-I am making a push
+<div class="text-center">
+    <h1 class="display-4">Current Severe Weather</h1>
+    <hr />
+    </div>
+
+    <style>
+    button {
+        font-size: 14px;
+        border: black;
+        color: blue;
+        background-color: white;
+    }
+    </style>
+
+    <button onclick="getWeather()" id="showAlertbtn">Show Severe Weather Alerts</button>
+
+<a href="https://th.bing.com/th/id/R.116b2b0eaf71b1aefdd1b3354ab6a21c?rik=QM6J3FgsihrP4w&riu=http%3a%2f%2fcliparts.co%2fcliparts%2fpc7%2fKa7%2fpc7Ka76qi.png&ehk=H9RIfKuJp5vOtAX7GjoSFt%2b%2bWMu4ta0nqjgiVXvSJrs%3d&risl=&pid=ImgRaw&r=0">
+    <img src="https://th.bing.com/th/id/R.116b2b0eaf71b1aefdd1b3354ab6a21c?rik=QM6J3FgsihrP4w&riu=http%3a%2f%2fcliparts.co%2fcliparts%2fpc7%2fKa7%2fpc7Ka76qi.png&ehk=H9RIfKuJp5vOtAX7GjoSFt%2b%2bWMu4ta0nqjgiVXvSJrs%3d&risl=&pid=ImgRaw&r=0" alt="Alert Picture" id="alertPic" />
+</a>
+
+<script>
+    function showAlert() {
+        document.getElementById("alertPic").style.display = "block";
+        document.getElementById("showAlertbtn").onclick = "show";
+    }
+</script>
+
+
