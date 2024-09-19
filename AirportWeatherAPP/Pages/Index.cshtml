@@ -8,8 +8,8 @@
 
 <body>
 
-    <div class="text-center">
-        <h1 class="display-4">Airport Weather Center</h1>
+    <div class="container text-center my-4">
+        <h1 class="display-4 text-primary-emphasis">Airport Weather Center</h1>
         <hr />
     </div>
 
@@ -39,28 +39,23 @@
 
     <!-- The dots (slide indicators) -->
     <div style="text-align:center">
+        <!--bootstrap "text-center" won't work-->
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-    <div class="text-center">
-        <!--horizontal line tag-->
-        <hr />
+    <div class="container text-center my-5">
+        <!-- Horizontal line -->
+        <hr class="my-4" />
 
-        <!--two line break tags-->
-        <br />
-        <br />
-
-        <!--Main message on home page-->
-        <h3>
-            Delivering real-time, accurate airport weather data to enhance travel planning and operational efficiency for both travelers and aviation professionals.
+        <!-- Main message on home page -->
+        <h3 class="my-4 text-secondary-emphasis bg-info-subtle">
+            Delivering real-time, accurate airport weather data to enhance travel planning and operational efficiency for both travelers and aviation professionals!
         </h3>
 
-        <!--three line break tags-->
-        <br />
-        <br />
-        <br />
+        <!-- Additional spacing -->
+        <div class="my-4"></div>
     </div>
 
 
@@ -100,22 +95,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Slideshow with Buttons</title>
-    <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Verdana, sans-serif;
-            margin: 0;
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
         /* Slideshow */
         .slideshow-container {
             max-width: 450px;
@@ -142,7 +122,7 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
-            
+            background-color: rgba(0,0,0,0.5);
         }
 
         /* Position the next btn on the right */
@@ -179,4 +159,5 @@
     </style>
 </head>
 </html>
+
 
