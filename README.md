@@ -1,4 +1,4 @@
-# <u>**Airport Weather Application**<u>
+# **Airport Weather Application**
 
 ## **Project Overview**
 
