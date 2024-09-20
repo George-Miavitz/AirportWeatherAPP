@@ -61,8 +61,8 @@
 <br /><br />
 #### Prototype Dev
 
-##### `SearchPage.cshtml` 
-- [Link to Page](C:\Users\georg\source\repos\AirportWeatherAPP\AirportWeatherAPP\Pages\SearchPage.cshtml)
+##### `SearchPage.cshtml`
+- [Link to SearchPage.cshtml](https://github.com/George-Miavitz/AirportWeatherAPP/blob/master/AirportWeatherAPP/Pages/SearchPage.cshtml)
 ###### Search Bar
 - Need to add API later but the button is set up and ready to connect data to it.
 - Search bar loader: Visually represent a loading function upon search using JavaScript. Used W3Schools and a little bit of Copilot.
@@ -74,6 +74,7 @@
 #### Document Individual Contributions
 
 ##### Contributions
+- [SearchPage](https://github.com/George-Miavitz/AirportWeatherAPP/blob/master/AirportWeatherAPP/Pages/SearchPage.cshtml)
 - Created all 4 current pages.
 - Created repository.
 - Added search bar to `SearchPage.cshtml`.
