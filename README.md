@@ -75,7 +75,7 @@
 
 ##### Contributions
 - [SearchPage](https://github.com/George-Miavitz/AirportWeatherAPP/blob/master/AirportWeatherAPP/Pages/SearchPage.cshtml)
-- Created all 4 current pages.
+- Initialized all 4 current pages.
 - Created repository.
 - Added search bar to `SearchPage.cshtml`.
 - Formatted Search button and loading spinner using bootstrap.
