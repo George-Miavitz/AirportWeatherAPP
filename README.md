@@ -44,7 +44,7 @@
 
 ##### Summary
 -Looking at the National Weather Services website, I navigated to Morgantown's airport to see what I could find. This is related to our web application because it would be our web app's primary function. Upon inspection, it seems like the application does not contain a bootstrap, which I found surprising. Everything looks to be manually done, which may have been on purpose for single searched airports. It provides more information than visually appealing effects. This may be what they are trying to achieve.
-
+$~~~$
 
 
 #### Github Research
@@ -158,7 +158,7 @@ This website is going to be a valuable resource in the development of my page of
 - Overall it seems to be pretty simple in the sense that they are using simple tags (we have gone over them in class) and doing the styling manually.
 
 ##### Summary
-Upon investigating the website and using it as a user, I believe this website is pretty similar to what we want to create, which means it is a valuable resource for our group to leverage to have an idea of what to do but also where we could focus on more. This website is especially useful to our group as from inspecting it I have seen it is a rather simple website that uses basic tags to style and essentially build their entire application. This will help the group get a better handle and understanding of the basics of creating our own airport weather data web application.
+- Upon investigating the website and using it as a user, I believe this website is pretty similar to what we want to create, which means it is a valuable resource for our group to leverage to have an idea of what to do but also where we could focus on more. This website is especially useful to our group as from inspecting it I have seen it is a rather simple website that uses basic tags to style and essentially build their entire application. This will help the group get a better handle and understanding of the basics of creating our own airport weather data web application.
 
 
 
@@ -169,17 +169,17 @@ Upon investigating the website and using it as a user, I believe this website is
 )
 
 ##### Analyze README
-The README is well organized but does not go into much detail about the specifics of the code. They tell us it is an HTML, CSS, and JavaScript application for pilots who want to view airport weather, which is similar to the app we are trying to build. They highlight the technologies used as well as all the features the app has for users to interact with. They provide a live demo which is great to be able to visualize their application and for me it has allowed me to understand their code a lot better.
+-The README is well organized but does not go into much detail about the specifics of the code. They tell us it is an HTML, CSS, and JavaScript application for pilots who want to view airport weather, which is similar to the app we are trying to build. They highlight the technologies used as well as all the features the app has for users to interact with. They provide a live demo which is great to be able to visualize their application and for me it has allowed me to understand their code a lot better.
 
 ##### Summary
-Overall this repo will be a great help to our group as it is well organized and is similar to the web app we are trying to build throughout the semester. There are folders for each type of coding language they used which helped me understand how the app worked and how the languages were working together to create the app. This repo will be a good way to understand how to implement JavaScript into our own web app and bootstrap as well.
+-Overall this repo will be a great help to our group as it is well organized and is similar to the web app we are trying to build throughout the semester. There are folders for each type of coding language they used which helped me understand how the app worked and how the languages were working together to create the app. This repo will be a good way to understand how to implement JavaScript into our own web app and bootstrap as well.
 
 
 
 #### Prototype Dev
 
 ##### Webpage
-###### Home Page (index page)
+###### Home Page `Index.cshtml`
 
 
 
@@ -205,10 +205,10 @@ Overall this repo will be a great help to our group as it is well organized and 
 
 ##### ChatGPT
 ###### Prompt:
-I am building an airport weather data web app and need a small mission statement to put on the homepage?
+- I am building an airport weather data web app and need a small mission statement to put on the homepage?
 
 ###### Response:
-Here's a concise mission statement for your web app:
+- Here's a concise mission statement for your web app:
 "Delivering real-time, accurate airport weather data to enhance travel planning and operational efficiency for both travelers and aviation professionals."
 You can adjust the tone or focus based on your target audience!
 
@@ -236,7 +236,7 @@ You can adjust the tone or focus based on your target audience!
 - There is also the use of dropdown arrows that lead users to the different pages they choose.
 
 ##### Summary
-In summary, I believe that this website can be used to help our project with ideas and what actually needs to be done. It can help by showing us things we might want to implement, and some things we cannot implement because some features are just too advanced for what we are learning to be able to do them ourselves. It even has a login page and help/support pages that our group was looking to put into our own page, so this is also beneficial for ideas. This website will be a great source and help to me and our group in moving forward.
+- In summary, I believe that this website can be used to help our project with ideas and what actually needs to be done. It can help by showing us things we might want to implement, and some things we cannot implement because some features are just too advanced for what we are learning to be able to do them ourselves. It even has a login page and help/support pages that our group was looking to put into our own page, so this is also beneficial for ideas. This website will be a great source and help to me and our group in moving forward.
 
 
 
@@ -246,10 +246,10 @@ In summary, I believe that this website can be used to help our project with ide
 [Weather Forecast Static Webpage](https://github.com/vanaj-418/Weather-Forecast-static-Webpage)
 
 ##### Analyze README
-The README for this specific repository just gives a basic overview of what the webpage has to offer and what components it has. It is pretty short and does not go into much detail on what is actually in the webpage. It is all about the webpage being a static website for weather forecasting.
+- The README for this specific repository just gives a basic overview of what the webpage has to offer and what components it has. It is pretty short and does not go into much detail on what is actually in the webpage. It is all about the webpage being a static website for weather forecasting.
 
 ##### Summary
-In summary, this repository is not super in-depth and not a very complex web page itself. It actually only has an image, a README, an index page, and a styles page. I still chose this repository because of how in-depth the index page goes with HTML and what my group might need for help in our project. I just think the repo is similar to what we are trying to build on a basic level and can help us in the future.
+- In summary, this repository is not super in-depth and not a very complex web page itself. It actually only has an image, a README, an index page, and a styles page. I still chose this repository because of how in-depth the index page goes with HTML and what my group might need for help in our project. I just think the repo is similar to what we are trying to build on a basic level and can help us in the future.
 
 
 
