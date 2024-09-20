@@ -27,7 +27,7 @@
 #### Competitive Analysis
 
 ##### Similar Website
-[National Weather Service - Morgantown Airport](https://forecast.weather.gov/data/obhistory/KMGW.html)
+-[National Weather Service - Morgantown Airport](https://forecast.weather.gov/data/obhistory/KMGW.html)
 
 ##### Investigate Website
 - Very basic design.
@@ -41,7 +41,7 @@
 - Picture placement and header row are manually styled.
 
 ##### Summary
-Looking at the National Weather Services website, I navigated to Morgantown's airport to see what I could find. This is related to our web application because it would be our web app's primary function. Upon inspection, it seems like the application does not contain a bootstrap, which I found surprising. Everything looks to be manually done, which may have been on purpose for single searched airports. It provides more information than visually appealing effects. This may be what they are trying to achieve.
+-Looking at the National Weather Services website, I navigated to Morgantown's airport to see what I could find. This is related to our web application because it would be our web app's primary function. Upon inspection, it seems like the application does not contain a bootstrap, which I found surprising. Everything looks to be manually done, which may have been on purpose for single searched airports. It provides more information than visually appealing effects. This may be what they are trying to achieve.
 
 #### Github Research
 
@@ -49,10 +49,10 @@ Looking at the National Weather Services website, I navigated to Morgantown's ai
 Aviation Weather Reports
 
 ##### Analyze README
-Similar to the web application we are planning to develop. This repository is mainly JavaScript but aims to simplify the visually complicated formats that are present in most similar websites.
+-Similar to the web application we are planning to develop. This repository is mainly JavaScript but aims to simplify the visually complicated formats that are present in most similar websites.
 
 ##### Summary
-The README summed the repository up nicely. It explained how most web applications are visually complicated and overloaded with information when it comes to Airport weather reporting. The owner of this repository used a home page, airport page, METAR data page, and TAF weather forecast to give live updates for weather and airports. I liked the simplicity of their design and how it worked.
+-The README summed the repository up nicely. It explained how most web applications are visually complicated and overloaded with information when it comes to Airport weather reporting. The owner of this repository used a home page, airport page, METAR data page, and TAF weather forecast to give live updates for weather and airports. I liked the simplicity of their design and how it worked.
 
 #### Prototype Dev
 
