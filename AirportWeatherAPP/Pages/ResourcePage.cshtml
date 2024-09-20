@@ -1,4 +1,64 @@
 ﻿@page
 @model AirportWeatherAPP.Pages.ResourcePageModel
 @{
+
 }
+
+<h1 class="display-10">The Page for Customer Support and Resources</h1>
+<hr />
+   
+<style>
+    .dropdown {
+        font size= 22px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<div class="dropdown">
+    <span>Support Numbers</span>
+    <div class="dropdown-content">
+        <p>(717)-504-1841</p>
+        <p>(717)-504-1830</p>
+        <p>1(800)-272-8277</p>
+    </div>
+</div>
+
+
+
+<html>
+
+<body>
+
+    <h2>Search for Support</h2>
+    <button onclick="myFunction()">Issue Search Bar</button>
+    <p id="Issue Search Bar"></p>
+    <script>
+        function myFunction() {
+            let text;
+            let user = prompt("Enter your support issue:", "Issue");
+            if (user == null || user == "") {
+                text = "User cancelled the prompt.";
+            } else {
+                text = "The slected issue: " + person + "can be fixed by:";
+            }
+            document.getElementById("Issue").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
+
