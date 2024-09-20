@@ -21,9 +21,9 @@
 
 
  ## **Individual Reseach and Contributions**
-
-
-
+ <br>
+ <br>
+ <br>
  ### **George “Taylor” Miavitz**
 
 #### Competitive Analysis
@@ -44,9 +44,9 @@
 
 ##### Summary
 - Looking at the National Weather Services website, I navigated to Morgantown's airport to see what I could find. This is related to our web application because it would be our web app's primary function. Upon inspection, it seems like the application does not contain a bootstrap, which I found surprising. Everything looks to be manually done, which may have been on purpose for single searched airports. It provides more information than visually appealing effects. This may be what they are trying to achieve.
-
-
-
+<br>
+<br>
+<br>
 #### Github Research
 
 ##### Explore Repos
@@ -57,9 +57,9 @@
 
 ##### Summary
 - The README summed the repository up nicely. It explained how most web applications are visually complicated and overloaded with information when it comes to Airport weather reporting. The owner of this repository used a home page, airport page, METAR data page, and TAF weather forecast to give live updates for weather and airports. I liked the simplicity of their design and how it worked.
-
-
-
+<br>
+<br>
+<br>
 #### Prototype Dev
 
 ##### `SearchPage.cshtml`
@@ -68,9 +68,9 @@
 - Search bar loader: Visually represent a loading function upon search using JavaScript. Used W3Schools and a little bit of Copilot.
 - Copilot search: “Help integrate bootstrap into a loading spinner on a search button in HTML using JavaScript”
   - (Note) This helped add bootstrap into my loading bar but I am not sure that our specific bootstrap allows that. We may need to amend our bootstrap to include my function.
-
-
-
+<br>
+<br>
+<br>
 #### Document Individual Contributions
 
 ##### Contributions
@@ -81,12 +81,11 @@
 - Added Pages to Nav Bar on the home page.
 - Added loading spinner using javascript to the search page on-click of the search button. This is hidden until the button is clicked. (Not sure why it isn’t completely functional yet but it is hidden)
 - Transcribed README using markdown.
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 ### **Phillip Waller**
 
 #### Competitive Analysis
@@ -106,9 +105,9 @@
 
 ##### Summary
 - This website is going to be a valuable resource in the development of my page of our app because I am assigned to create the “Current Events/Alerts” page. Further inspection into how the JavaScript brings the closure notifications onto the website will provide me with a better view of what my development may look like. I did not previously think to include forecasted events into the website, but it is an element that can be an addition later on in the project. I was familiar with more of the tags than I expected such as `<header>`, `<div>`, `<button>`, and `<h2>`. It seems like the most difficult part of my page will be working through all of the classes in JavaScript.
-
-
-
+<br>
+<br>
+<br>
 #### GitHub Research
 
 ##### Explore Repos
@@ -119,25 +118,24 @@
 
 ##### Summary
 - Their README was well organized. In the “Development” section, there is a link to their Notion page where they have every update that they have completed as well as updates they are working on. In this section of the README, they specify that HTML, CSS, JavaScript, and Java are used throughout their development. If I further inspect the method that this website uses to pull alerts into the website, I can use similar code on ours. Many of the tabs are .json which will prove to be useful in the development of our website as well.
-
-
-
+<br>
+<br>
+<br>
 #### Prototype Dev
 
 ##### `AlertPage.cshtml`
 ###### Current Events/Alerts Page
-
-
-
+<br>
+<br>
+<br>
 #### Document Individual Contributions
 
 - Current Events/Alerts Page
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 ### **Diego Reyes**
 
 #### Competitive Analysis
@@ -159,9 +157,9 @@
 
 ##### Summary
 - Upon investigating the website and using it as a user, I believe this website is pretty similar to what we want to create, which means it is a valuable resource for our group to leverage to have an idea of what to do but also where we could focus on more. This website is especially useful to our group as from inspecting it I have seen it is a rather simple website that uses basic tags to style and essentially build their entire application. This will help the group get a better handle and understanding of the basics of creating our own airport weather data web application.
-
-
-
+<br>
+<br>
+<br>
 #### GitHub Research
 
 ##### Explore Repos
@@ -173,16 +171,16 @@
 
 ##### Summary
 - Overall this repo will be a great help to our group as it is well organized and is similar to the web app we are trying to build throughout the semester. There are folders for each type of coding language they used which helped me understand how the app worked and how the languages were working together to create the app. This repo will be a good way to understand how to implement JavaScript into our own web app and bootstrap as well.
-
-
-
+<br>
+<br>
+<br>
 #### Prototype Dev
 
 ##### Webpage
 ###### Home Page `Index.cshtml`
-
-
-
+<br>
+<br>
+<br>
 #### Document Individual Contributions
 
 ##### Webpage
@@ -211,10 +209,11 @@
 - Here's a concise mission statement for your web app:
 "Delivering real-time, accurate airport weather data to enhance travel planning and operational efficiency for both travelers and aviation professionals."
 You can adjust the tone or focus based on your target audience!
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 ### **Henry Shearer**
 
 #### Competitive Analysis
@@ -237,9 +236,9 @@ You can adjust the tone or focus based on your target audience!
 
 ##### Summary
 - In summary, I believe that this website can be used to help our project with ideas and what actually needs to be done. It can help by showing us things we might want to implement, and some things we cannot implement because some features are just too advanced for what we are learning to be able to do them ourselves. It even has a login page and help/support pages that our group was looking to put into our own page, so this is also beneficial for ideas. This website will be a great source and help to me and our group in moving forward.
-
-
-
+<br>
+<br>
+<br>
 #### GitHub Research
 
 ##### Explore Repos
@@ -250,16 +249,16 @@ You can adjust the tone or focus based on your target audience!
 
 ##### Summary
 - In summary, this repository is not super in-depth and not a very complex web page itself. It actually only has an image, a README, an index page, and a styles page. I still chose this repository because of how in-depth the index page goes with HTML and what my group might need for help in our project. I just think the repo is similar to what we are trying to build on a basic level and can help us in the future.
-
-
-
+<br>
+<br>
+<br>
 #### Prototype Dev
 
 ##### Webpage
 ###### `ResourcePage.cshtml`
-
-
-
+<br>
+<br>
+<br>
 #### Document Individual Contributions
 
 - Resources page
