@@ -44,7 +44,7 @@
 
 ##### Summary
 -Looking at the National Weather Services website, I navigated to Morgantown's airport to see what I could find. This is related to our web application because it would be our web app's primary function. Upon inspection, it seems like the application does not contain a bootstrap, which I found surprising. Everything looks to be manually done, which may have been on purpose for single searched airports. It provides more information than visually appealing effects. This may be what they are trying to achieve.
-$~~~$
+
 
 
 #### Github Research
@@ -105,7 +105,7 @@ $~~~$
 - Classes are used for each element of the closures, and buttons are used to show and hide details.
 
 ##### Summary
-This website is going to be a valuable resource in the development of my page of our app because I am assigned to create the “Current Events/Alerts” page. Further inspection into how the JavaScript brings the closure notifications onto the website will provide me with a better view of what my development may look like. I did not previously think to include forecasted events into the website, but it is an element that can be an addition later on in the project. I was familiar with more of the tags than I expected such as `<header>`, `<div>`, `<button>`, and `<h2>`. It seems like the most difficult part of my page will be working through all of the classes in JavaScript.
+- This website is going to be a valuable resource in the development of my page of our app because I am assigned to create the “Current Events/Alerts” page. Further inspection into how the JavaScript brings the closure notifications onto the website will provide me with a better view of what my development may look like. I did not previously think to include forecasted events into the website, but it is an element that can be an addition later on in the project. I was familiar with more of the tags than I expected such as `<header>`, `<div>`, `<button>`, and `<h2>`. It seems like the most difficult part of my page will be working through all of the classes in JavaScript.
 
 
 
@@ -115,10 +115,10 @@ This website is going to be a valuable resource in the development of my page of
 [AtmosWeather](https://github.com/atticuscornett/AtmosWeather/blob/main/README.md)
 
 ##### Analyze README
--This app seems to have a much broader scope than our project because much of the focus of their README is on cross capability. However, the development of their project is documented very well and has useful pieces to it.
+- This app seems to have a much broader scope than our project because much of the focus of their README is on cross capability. However, the development of their project is documented very well and has useful pieces to it.
 
 ##### Summary
--Their README was well organized. In the “Development” section, there is a link to their Notion page where they have every update that they have completed as well as updates they are working on. In this section of the README, they specify that HTML, CSS, JavaScript, and Java are used throughout their development. If I further inspect the method that this website uses to pull alerts into the website, I can use similar code on ours. Many of the tabs are .json which will prove to be useful in the development of our website as well.
+- Their README was well organized. In the “Development” section, there is a link to their Notion page where they have every update that they have completed as well as updates they are working on. In this section of the README, they specify that HTML, CSS, JavaScript, and Java are used throughout their development. If I further inspect the method that this website uses to pull alerts into the website, I can use similar code on ours. Many of the tabs are .json which will prove to be useful in the development of our website as well.
 
 
 
@@ -169,10 +169,10 @@ This website is going to be a valuable resource in the development of my page of
 )
 
 ##### Analyze README
--The README is well organized but does not go into much detail about the specifics of the code. They tell us it is an HTML, CSS, and JavaScript application for pilots who want to view airport weather, which is similar to the app we are trying to build. They highlight the technologies used as well as all the features the app has for users to interact with. They provide a live demo which is great to be able to visualize their application and for me it has allowed me to understand their code a lot better.
+- The README is well organized but does not go into much detail about the specifics of the code. They tell us it is an HTML, CSS, and JavaScript application for pilots who want to view airport weather, which is similar to the app we are trying to build. They highlight the technologies used as well as all the features the app has for users to interact with. They provide a live demo which is great to be able to visualize their application and for me it has allowed me to understand their code a lot better.
 
 ##### Summary
--Overall this repo will be a great help to our group as it is well organized and is similar to the web app we are trying to build throughout the semester. There are folders for each type of coding language they used which helped me understand how the app worked and how the languages were working together to create the app. This repo will be a good way to understand how to implement JavaScript into our own web app and bootstrap as well.
+- Overall this repo will be a great help to our group as it is well organized and is similar to the web app we are trying to build throughout the semester. There are folders for each type of coding language they used which helped me understand how the app worked and how the languages were working together to create the app. This repo will be a good way to understand how to implement JavaScript into our own web app and bootstrap as well.
 
 
 
