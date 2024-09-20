@@ -27,8 +27,7 @@
 #### Competitive Analysis
 
 ##### Similar Website
-National Weather Service - Morgantown Airport
-"https://forecast.weather.gov/data/obhistory/KMGW.html"
+[National Weather Service - Morgantown Airport](https://forecast.weather.gov/data/obhistory/KMGW.html)
 
 ##### Investigate Website
 - Very basic design.
