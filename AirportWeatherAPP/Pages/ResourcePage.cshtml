@@ -7,6 +7,31 @@
 <h1 class="display-10">The Page for Customer Support and Resources</h1>
 <hr />
    
+
+
+
+<html>
+
+<body>
+
+    <h2>Search for Support</h2>
+    <button onclick="myFunction()">Issue Search Bar</button>
+    <p id="Issue Search Bar"></p>
+    <script>
+        function myFunction() {
+            let text;
+            let user = prompt("Enter your support issue:", "Issue");
+            if (user == null || user == "") {
+                text = "User cancelled the prompt.";
+            } else {
+                text = "The slected issue: " + person + "can be fixed by:";
+            }
+            document.getElementById("Issue").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
+
 <style>
     .dropdown {
         font size= 22px;
@@ -37,28 +62,4 @@
         <p>1(800)-272-8277</p>
     </div>
 </div>
-
-
-
-<html>
-
-<body>
-
-    <h2>Search for Support</h2>
-    <button onclick="myFunction()">Issue Search Bar</button>
-    <p id="Issue Search Bar"></p>
-    <script>
-        function myFunction() {
-            let text;
-            let user = prompt("Enter your support issue:", "Issue");
-            if (user == null || user == "") {
-                text = "User cancelled the prompt.";
-            } else {
-                text = "The slected issue: " + person + "can be fixed by:";
-            }
-            document.getElementById("Issue").innerHTML = text;
-        }
-    </script>
-</body>
-</html>
 
