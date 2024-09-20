@@ -5,19 +5,41 @@
 
 <br class="my-4" />
 
+<!--Create search box-->
+
 <input id="searchfld" placeholder="Airport" class="form-control" />
 
 <br class="my-1" />
 
-<button typeof="button" onclick="searchAirPort();" class="btn btn-outline-info">Search</button>
+<!--Create search button-->
+
+<button type="button" onclick="searchAirport();" class="btn btn-outline-info btn-lg btn-block d-flex align-items-center justify-content-center">
+    <span id="buttonText">Search</span>
+
+    <!--Initialize the loader-->
+
+    <div id="loader" class="spinner-border text-primary ms-2" role="status" style="display: none; width: 1rem; height: 1rem;">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+
+</button>
 
 
-<div id="searchResultsDiv">
+<div id="searchResultsDiv"></div>
 
 <script>
 
     async function searchAirport(){
+        //Search api goes here
 
+        document.getElementById('buttonText').stlye.display = 'none';
+        document.getElementById('loader').style.display = 'inline-block';
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        //Hiding the loader until button is pushed
+        document.getElementById('buttonText').style.display = 'inline';
+        document.getElementById('loader').stlye.display = 'none';
     }
 
 </script>
