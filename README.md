@@ -23,7 +23,6 @@
  ## **Individual Reseach and Contributions**
  <br /><br />
 <br /><br />
-<br /><br />
 ### **George “Taylor” Miavitz**
 
 #### Competitive Analysis
