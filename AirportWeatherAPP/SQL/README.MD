@@ -12,10 +12,10 @@
 **spUserAdd**\
 Action: Add a new user to the User Table.\
 Parameters:\
-	- @UserId\
-	- @Username\
-	- @Email\
-	- @Password
+	- @UserId INT\
+	- @Username NVARCHAR(255)\
+	- @Email NVARCHAR(255)\
+	- @Password NVARCHAR(255)
 	
 
 **spWeatherDataOrgAdd**\
