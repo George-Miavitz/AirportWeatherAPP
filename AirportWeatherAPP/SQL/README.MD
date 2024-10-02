@@ -10,69 +10,69 @@
 ## **MIST 353 Airport Weather APP Stored Procedures**
 
 **spUserAdd**
-Action: Add a new user to the User Table.
-Parameters:
- - @UserId
- - @Username
- - @Email
- - @Password
+ 	- Action: Add a new user to the User Table.
+	- Parameters:
+		- @UserId
+		- @Username
+		- @Email
+		- @Password
 	
 
 **spWeatherDataOrgAdd**
-Action: Add a new Organization to Weather Data Organization
-Parameters:
-	- @OrgName NVARCHAR(255)
+	- Action: Add a new Organization to Weather Data Organization
+	- Parameters:
+		- @OrgName NVARCHAR(255)
 
 
 **spObservationAdd**
-Action: Add a new observation to the observation table.
-Parameters:
-	- @UserID INT
-	- @OrgID INT
-	- @Descriptor NVARCHAR(255)
-	- @Timestamp DATETIME
-	- @Temperature Decimal(5,2)
-	- @WindDirection NVARCHAR(50)
-	- @Visibility Decimal(5,2)
+	- Action: Add a new observation to the observation table.
+	- Parameters:
+		- @UserID INT
+		- @OrgID INT
+		- @Descriptor NVARCHAR(255)
+		- @Timestamp DATETIME
+		- @Temperature Decimal(5,2)
+		- @WindDirection NVARCHAR(50)
+		- @Visibility Decimal(5,2)
 
 
 **spAlertAdd**
-Action: Add a new alert to the alert table
-Parameters:
-	- @UserID INT
-	- @ObservationID INT
-	- @CommunicationText NVARCHAR(255)
+	- Action: Add a new alert to the alert table
+	- Parameters:
+		- @UserID INT
+		- @ObservationID INT
+		- @CommunicationText NVARCHAR(255)
 
 
 
 **spFeedbackAdd**
-Action: Add new feedback to the feedback table
-Parameters:
-	- @UserID INT
-	- @Text NVARCHAR(255)
-	- @Timestamp DATETIME
+	- Action: Add new feedback to the feedback table
+	- Parameters:
+		- @UserID INT
+		- @Text NVARCHAR(255)
+		- @Timestamp DATETIME
 
 
 
 **spUserEmailUpdate**
-Action: Update an individual user’s email address
-Parameters: 
-	- @UserID INT
-	- @NewEmail NVARCHAR(255)
+	- Action: Update an individual user’s email address
+	- Parameters: 
+		- @UserID INT
+		- @NewEmail NVARCHAR(255)
 
 
 
 **spObservationDelete**
-Action: Delete a single observation
-Parameters:
-	- @Observation INT
+	- Action: Delete a single observation
+	- Parameters:
+		- @Observation INT
 
 
 
 **spFeedbackGetByUserID**
-Action: Retrieve Feedback based on a users ID
-Parameters: 
-	- @UserID INT
+	- Action: Retrieve Feedback based on a users ID
+	- Parameters: 
+		- @UserID INT
 
 ## **References and Notes**
 
