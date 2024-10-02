@@ -54,11 +54,11 @@
 
 
 
-**spUserEmailUpdate**
-	- Action: Update an individual user’s email address
-	- Parameters: 
-		- @UserID INT
-		- @NewEmail NVARCHAR(255)
+**spUserEmailUpdate**\
+	- Action: Update an individual user’s email address\
+	- Parameters: \
+		- @UserID INT\
+		- @NewEmail NVARCHAR(255)\
 
 
 
