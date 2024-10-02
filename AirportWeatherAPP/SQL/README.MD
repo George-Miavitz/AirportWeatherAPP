@@ -90,7 +90,7 @@ Parameters: \
 
 ### Phillip Waller
 
-	- ...
+	- Class notes on adding a vehicle and deleting an org for my two stored procedures
 
 ### Henery Shearer
 
