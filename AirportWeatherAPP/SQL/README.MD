@@ -15,13 +15,13 @@ Parameters:\
 	- @UserId\
 	- @Username\
 	- @Email\
-	- @Password\
+	- @Password
 	
 
 **spWeatherDataOrgAdd**\
 Action: Add a new Organization to Weather Data Organization\
 Parameters:\
-	- @OrgName NVARCHAR(255)\
+	- @OrgName NVARCHAR(255)
 
 
 **spObservationAdd**\
@@ -33,7 +33,7 @@ Parameters:\
 	- @Timestamp DATETIME\
 	- @Temperature Decimal(5,2)\
 	- @WindDirection NVARCHAR(50)\
-	- @Visibility Decimal(5,2)\
+	- @Visibility Decimal(5,2)
 
 
 **spAlertAdd**\
@@ -41,7 +41,7 @@ Action: Add a new alert to the alert table\
 Parameters:\
 	- @UserID INT\
 	- @ObservationID INT\
-	- @CommunicationText NVARCHAR(255)\
+	- @CommunicationText NVARCHAR(255)
 
 
 
@@ -50,7 +50,7 @@ Action: Add new feedback to the feedback table\
 Parameters:\
 	- @UserID INT\
 	- @Text NVARCHAR(255)\
-	- @Timestamp DATETIME\
+	- @Timestamp DATETIME
 
 
 
@@ -58,21 +58,21 @@ Parameters:\
 Action: Update an individual user’s email address\
 Parameters: \
 	- @UserID INT\
-	- @NewEmail NVARCHAR(255)\
+	- @NewEmail NVARCHAR(255)
 
 
 
 **spObservationDelete**\
 Action: Delete a single observation\
 Parameters:\
-	- @Observation INT\
+	- @Observation INT
 
 
 
 **spFeedbackGetByUserID**\
 Action: Retrieve Feedback based on a users ID\
 Parameters: \
-	- @UserID INT\
+	- @UserID INT
 
 ## **References and Notes**
 
