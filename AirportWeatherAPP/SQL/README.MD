@@ -86,7 +86,9 @@ Parameters: \
 
 ### Diego Reyes
 
-	- ...
+	- Class notes on adding a new alert to the Alert table
+	- Class notes on deleting an observation from all tables they appear in
+
 
 ### Phillip Waller
 
