@@ -74,6 +74,26 @@ Action: Retrieve Feedback based on a users ID\
 Parameters: \
 	- @UserID INT
 
+
+**spWeatherDataOrg**\
+Action: Add an organtization name to the table\
+Parameters:\
+	- @OrgName NVARCHAR(255) 
+
+
+**spObservationAdd**\
+Action: An user can add an observation they have to the table or from other data\
+Parameters:\
+  @UserID INT,               
+    @OrgID INT,                
+    @Descriptor NVARCHAR(100), 
+    @Timestamp DATETIME,       
+    @Temperature DECIMAL(5,2), 
+    @WindSpeed DECIMAL(5,2),   
+    @WindDirection NVARCHAR(50),
+    @Visibility DECIMAL(5,2)   
+
+
 ## **References and Notes**
 
 ### Taylor Miavitz
@@ -96,7 +116,7 @@ Parameters: \
 
 ### Henery Shearer
 
-	- ...
+	- Used class notes to help adding data to both the WeatherData table and Observation table.
 
 
 
