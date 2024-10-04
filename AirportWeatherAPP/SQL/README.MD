@@ -75,7 +75,7 @@ Parameters: \
 	- @UserID INT
 
 
-**spWeatherDataOrg**\
+**spWeatherDataOrgAdd**\
 Action: Add an organtization name to the table\
 Parameters:\
 	- @OrgName NVARCHAR(255) 
