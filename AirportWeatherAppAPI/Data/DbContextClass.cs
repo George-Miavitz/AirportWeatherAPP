@@ -14,6 +14,7 @@ namespace AirportWeatherAppAPI.Data
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
         }
         public DbSet<User> User { get; set; }
-     
+        public DbSet<Alert> Alert { get; set; }
+
     }
 }

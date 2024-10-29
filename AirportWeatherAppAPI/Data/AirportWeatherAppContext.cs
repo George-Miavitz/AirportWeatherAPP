@@ -6,9 +6,7 @@ namespace AirportWeatherAppAPI.Data;
 
 public partial class AirportWeatherAppContext : DbContext
 {
-    public AirportWeatherAppContext()
-    {
-    }
+
 
     public AirportWeatherAppContext(DbContextOptions<AirportWeatherAppContext> options)
         : base(options)
