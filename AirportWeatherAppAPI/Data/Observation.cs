@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 
 namespace AirportWeatherAppAPI.Data;
 
 public partial class Observation
 {
+    [Key]
     public int ObservationId { get; set; }
 
     public int UserId { get; set; }
