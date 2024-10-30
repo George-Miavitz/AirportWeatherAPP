@@ -11,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
 //builder.Services.AddScoped<IPhillipWaller, PhillipWaller>();
+
+//Diego builders
 builder.Services.AddScoped<IAlertService, AlertService>();
 builder.Services.AddScoped<IObservationService, ObservationService>();
 
