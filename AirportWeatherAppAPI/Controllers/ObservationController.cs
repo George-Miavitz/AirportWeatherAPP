@@ -17,9 +17,9 @@ namespace AirportWeatherAppAPI.Controllers
         }
 
         [HttpDelete("deletevehicle")]
-        public async Task<IActionResult> ObservationDelete(int ObservationID)
+        public async Task<IActionResult> ObservationDelete(int ObservationId)
         {
-            var response = await ObservationService.ObservationDelete(ObservationID);
+            var response = await ObservationService.ObservationDelete(ObservationId);
             return Ok(response);
         }
 

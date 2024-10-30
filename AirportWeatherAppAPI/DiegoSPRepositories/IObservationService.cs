@@ -4,6 +4,6 @@ namespace AirportWeatherAppAPI.DiegoSPRepositories
 {
     public interface IObservationService
     {
-        Task<int> ObservationDelete(int ObservationID);
+        Task<int> ObservationDelete(int ObservationId);
     }
 }

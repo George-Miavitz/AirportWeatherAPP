@@ -7,7 +7,7 @@ namespace AirportWeatherAppAPI.Data;
 public partial class Observation
 {
     public int ObservationId { get; set; }
-    public SqlDbType ObservationID { get; internal set; }
+
     public int UserId { get; set; }
 
     public int OrgId { get; set; }
