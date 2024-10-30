@@ -15,11 +15,10 @@ namespace AirportWeatherAppAPI.DiegoSPRepositories
         public async Task<int> AlertAdd(Alert NewAlert)
         {
             var parameter = new List<SqlParameter>();
-            parameter.Add(new SqlParameter("@AlertId", NewAlert.AlertId));
             parameter.Add(new SqlParameter("@UserId", NewAlert.UserId));
             parameter.Add(new SqlParameter("@ObservationId", NewAlert.ObservationId));
             parameter.Add(new SqlParameter("@CommunicationText", NewAlert.CommunicationText));
-            return await _dbContext.Database.ExecuteSqlRawAsync("exec spAlertAdd @AlertId, @UserId, @ObservationId, @CommunicationText", parameter.ToArray());
+            return await _dbContext.Database.ExecuteSqlRawAsync("exec spAlertAdd @UserId, @ObservationId, @CommunicationText", parameter.ToArray());
         }
 
     }
