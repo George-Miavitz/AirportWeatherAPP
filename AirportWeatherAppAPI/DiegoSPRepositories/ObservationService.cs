@@ -13,7 +13,6 @@ namespace AirportWeatherAppAPI.DiegoSPRepositories
         }
         public async Task<int> ObservationDelete(Observation DeleteObservation)
         {
-            var parameter = new List<SqlParameter>();
             var param = new SqlParameter("@ObservationID", DeleteObservation.ObservationID);
             return await _dbContext.Database.ExecuteSqlRawAsync("exec spObservationDelete @ObservationID", param);
         }
