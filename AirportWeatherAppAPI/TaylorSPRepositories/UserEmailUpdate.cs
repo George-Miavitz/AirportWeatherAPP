@@ -5,21 +5,21 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AirportWeatherAppAPI.Repositories
 {
-    public class NewEmail : IUserEmailUpdate
+    public class UserNewEmail : IUserEmailUpdate
     {
-        private readonly DbContextClass _dbcontext;
+        private readonly DbContextClass _dbContext;
 
-        public NewEmail(DbContextClass dbcontext)
+        public UserNewEmail(DbContextClass dbContext)
         {
-            _dbcontext = dbcontext;
+            _dbContext = dbContext;
         }
 
         public async Task<int> UpdateEmail(User NewEmail)
         {
             var parameter = new List<SqlParameter>();
-            parameter.Add(new SqlParameter("@UserID", User.UserId));,
-            parameter.Add(new SqlParameter("@NewEmail", User.Email));
-            return await _dbcontext.Database.ExecuteSqlRawAsync("exec spUserEmailUpdate @UserID, @NewEmail", parameter.ToArray());
+            parameter.Add(new SqlParameter("@UserID", NewEmail.UserId));
+            parameter.Add(new SqlParameter("@NewEmail", NewEmail.Email));
+            return await _dbContext.Database.ExecuteSqlRawAsync("exec spUserEmailUpdate @UserID, @NewEmail", parameter.ToArray());
         }
 
     }
