@@ -1,4 +1,5 @@
-﻿using AirportWeatherAppAPI;
+﻿/*
+using AirportWeatherAppAPI;
 using AirportWeatherAppAPI.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -32,3 +33,4 @@ namespace AirportWeatherAppAPI.Controllers
         }
     }
 }
+*/

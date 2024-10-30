@@ -1,4 +1,5 @@
-﻿using AirportWeatherAppAPI.Data;
+﻿/*
+using AirportWeatherAppAPI.Data;
 
 namespace AirportWeatherAppAPI
 {
@@ -7,3 +8,5 @@ namespace AirportWeatherAppAPI
         Task<int> UserAddGetByUsername(AirportWeatherApp User);
     }
 }
+
+*/

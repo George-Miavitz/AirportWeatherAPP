@@ -1,4 +1,5 @@
-﻿using AirportWeatherAppAPI.Data;
+﻿/*
+using AirportWeatherAppAPI.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Data.Common;
@@ -24,3 +25,4 @@ namespace AirportWeatherAppAPI
         }
     }
 }
+*/

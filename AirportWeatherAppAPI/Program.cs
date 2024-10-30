@@ -10,8 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
-builder.Services.AddScoped<IPhillipWaller, PhillipWaller>();
+//builder.Services.AddScoped<IPhillipWaller, PhillipWaller>();
 builder.Services.AddScoped<IAlertService, AlertService>();
+builder.Services.AddScoped<IObservationService, ObservationService>();
+
 
 builder.Services.AddDbContext<DbContextClass>();
 builder.Services.AddControllers();

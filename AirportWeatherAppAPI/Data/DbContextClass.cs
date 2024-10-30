@@ -15,6 +15,7 @@ namespace AirportWeatherAppAPI.Data
         }
         public DbSet<User> User { get; set; }
         public DbSet<Alert> Alert { get; set; }
+        public DbSet<Observation> Observation { get; set; }
 
     }
 }
