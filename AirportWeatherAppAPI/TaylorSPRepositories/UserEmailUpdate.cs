@@ -2,7 +2,7 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
-
+//Created by Taylor Miavitz
 namespace AirportWeatherAppAPI.TaylorSPRepositories
 {
     public class UserEmailUpdate : IUserEmailUpdate
@@ -13,7 +13,8 @@ namespace AirportWeatherAppAPI.TaylorSPRepositories
         {
             _dbContext = dbContext;
         }
-
+        // Prompts a user to enter a UserID in order to update a Users Email.
+        //The will later be integrated to an account settings based task.
         public async Task<int> UpdateEmail(int UserId, string Email)
         {
             var parameter = new List<SqlParameter>();

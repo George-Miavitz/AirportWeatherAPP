@@ -2,7 +2,7 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
-
+//Created by Taylor Miavitz
 namespace AirportWeatherAppAPI.TaylorSPRepositories
 {
     public class GetFeedbackByUserID : IGetFeedbackByUserID
@@ -13,7 +13,7 @@ namespace AirportWeatherAppAPI.TaylorSPRepositories
         {
             _dbContext = dbContext;
         }
-        //Need To Retrieve a String Using the UserID (Not an int)
+        //Results in a task that prompts a user to enter a UserID to retrieve feedback submitted by a different user.
         public async Task<IEnumerable<Feedback>> FeedbackSearch(int SearchFeedback)
         {
             var parameter = new List<SqlParameter>();
