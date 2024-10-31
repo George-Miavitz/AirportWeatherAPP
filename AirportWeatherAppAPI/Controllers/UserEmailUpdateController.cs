@@ -9,24 +9,23 @@ namespace AirportWeatherAppAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GetFeedbackByUserIDController : Controller
+    public class UserEmailUpddateController : Controller
     {
-       
-        private readonly IGetFeedbackByUserID GetFeedbackByUserID;
-        public GetFeedbackByUserIDController(IGetFeedbackByUserID getfeedbackbyuserid)
+        private readonly IUserEmailUpdate UserEmailUpdate;
+        public UserEmailUpddateController(IUserEmailUpdate useremailupdate)
         {
-            this.GetFeedbackByUserID = getfeedbackbyuserid;
+            this.UserEmailUpdate = useremailupdate;
         }
-        [HttpPost("getfeedback")]
-        public async Task<IActionResult> GetFeedbackAsync(Feedback SearchFeedback)
+        [HttpPost("updateemail")]
+        public async Task<IActionResult> UpdateEmailAsync(User EmailUpdate)
         {
-            if (SearchFeedback == null)
+            if (EmailUpdate == null)
             {
                 return BadRequest();
             }
             try
             {
-                var response = await GetFeedbackByUserID.FeedbackSearch(SearchFeedback);
+                var response = await UserEmailUpdate.UpdateEmail(EmailUpdate);
                 return Ok(response);
             }
             catch
