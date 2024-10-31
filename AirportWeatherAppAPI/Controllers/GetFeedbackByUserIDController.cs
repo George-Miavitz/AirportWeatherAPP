@@ -18,7 +18,7 @@ namespace AirportWeatherAppAPI.Controllers
             this.GetFeedbackByUserID = getfeedbackbyuserid;
         }
         [HttpPost("getfeedback")]
-        public async Task<IActionResult> GetFeedbackAsync(Feedback SearchFeedback)
+        public async Task<IActionResult> GetFeedbackAsync(int SearchFeedback)
         {
             if (SearchFeedback == null)
             {

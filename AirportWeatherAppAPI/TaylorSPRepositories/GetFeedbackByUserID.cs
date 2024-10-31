@@ -13,11 +13,13 @@ namespace AirportWeatherAppAPI.TaylorSPRepositories
         {
             _dbContext = dbContext;
         }
-        public async Task<int> FeedbackSearch(Feedback SearchFeedback)
+        //Need To Retrieve a String Using the UserID (Not an int)
+        public async Task<IEnumerable<Feedback>> FeedbackSearch(int SearchFeedback)
         {
             var parameter = new List<SqlParameter>();
-            parameter.Add(new SqlParameter("@UserID", SearchFeedback.UserId));
-            return await _dbContext.Database.ExecuteSqlRawAsync("exec spFeedbackGetByUserID @UserID", parameter.ToArray());
+            parameter.Add(new SqlParameter("@UserID", SearchFeedback));
+            var myResults =  await Task.Run(() => _dbContext.Feedback.FromSqlRaw("exec spFeedbackGetByUserID @UserID", parameter.ToArray()));
+            return myResults;
         }
     }
 }

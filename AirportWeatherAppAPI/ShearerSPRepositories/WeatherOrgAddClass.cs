@@ -1,4 +1,4 @@
-﻿/*using AirportWeatherAppAPI.Data;
+﻿using AirportWeatherAppAPI.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,4 +19,3 @@ namespace AirportWeatherAppAPI.ShearerSPRepositories
         }
     }
 }
-*/
