@@ -1,16 +1,37 @@
-﻿using AirportWeatherAppAPI.ShearerSPRepositories;
+﻿using Microsoft.AspNetCore.Mvc;
+using AirportWeatherAppAPI.ShearerSPRepositories;
 using AirportWeatherAppAPI.Data;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-
+using System.Collections.Generic;
 
 namespace AirportWeatherAppAPI.Controllers
 {
-    public class WeatherOrgAddController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class WeatherOrgAddController : ControllerBase
     {
-        public IActionResult Index()
+        private readonly IWeatherOrgAddClass WeatherOrgAddClass;
+        public WeatherOrgAddController(IWeatherOrgAddClass weatherOrgAddClass)
         {
-            return View();
+            this.WeatherOrgAddClass = weatherOrgAddClass;
+        }
+
+            [HttpPost("addweatherorg")]
+        public async Task<IActionResult> AddWeatherOrgAsync(WeatherDataOrg weatherOrg)
+        {
+            if (weatherOrg == null)
+            {
+                return BadRequest();
+            }
+            try
+            {
+                var response = await WeatherOrgAddClass.WeatherOrgAdd(weatherOrg);
+                return Ok(response);
+            }
+            catch
+            {
+                throw;
+            }
         }
     }
 }

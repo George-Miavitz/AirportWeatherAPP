@@ -1,6 +1,7 @@
 using AirportWeatherAppAPI;
 using AirportWeatherAppAPI.Data;
 using AirportWeatherAppAPI.DiegoSPRepositories;
+using AirportWeatherAppAPI.ShearerSPRepositories;
 using AirportWeatherAppAPI.TaylorSPRepositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -21,6 +22,9 @@ builder.Services.AddScoped<IObservationService, ObservationService>();
 builder.Services.AddScoped<IGetFeedbackByUserID, GetFeedbackByUserID>();
 builder.Services.AddScoped<IUserEmailUpdate, UserEmailUpdate>();
 
+//Henry's Builders
+builder.Services.AddScoped<IObservationAddClass, ObservationAddClass>();
+builder.Services.AddScoped<IWeatherOrgAddClass, WeatherOrgAddClass>();
 
 builder.Services.AddDbContext<DbContextClass>();
 builder.Services.AddControllers();
