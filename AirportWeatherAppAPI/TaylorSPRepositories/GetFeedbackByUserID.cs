@@ -3,20 +3,20 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace AirportWeatherAppAPI.Repositories
+namespace AirportWeatherAppAPI.TaylorSPRepositories
 {
-    public class FeedbackService : IFeedbackService
+    public class GetFeedbackByUserID : IGetFeedbackByUserID
     {
         private readonly DbContextClass _dbContext;
 
-        public FeedbackService(DbContextClass dbContext)
+        public GetFeedbackByUserID(DbContextClass dbContext)
         {
             _dbContext = dbContext;
         }
-        public async Task<int> GetFeedbackFromUserID(User FeedbackRetrieve)
+        public async Task<int> FeedbackSearch(Feedback SearchFeedback)
         {
             var parameter = new List<SqlParameter>();
-            parameter.Add(new SqlParameter("@UserID", FeedbackRetrieve.UserId));
+            parameter.Add(new SqlParameter("@UserID", SearchFeedback.UserId));
             return await _dbContext.Database.ExecuteSqlRawAsync("exec spFeedbackGetByUserID @UserID", parameter.ToArray());
         }
     }

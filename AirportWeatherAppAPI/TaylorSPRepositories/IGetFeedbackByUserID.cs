@@ -1,6 +1,9 @@
-﻿namespace AirportWeatherAppAPI.Repositories
+﻿using AirportWeatherAppAPI.Data;
+
+namespace AirportWeatherAppAPI.TaylorSPRepositories
 {
-    public interface IFeedbackService
+    public interface IGetFeedbackByUserID
     {
+        Task<int> FeedbackSearch(Feedback SearchFeedback);
     }
 }

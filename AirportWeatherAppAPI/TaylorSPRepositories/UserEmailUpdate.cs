@@ -3,7 +3,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace AirportWeatherAppAPI.Repositories
+namespace AirportWeatherAppAPI.TaylorSPRepositories
 {
     public class UserNewEmail : IUserEmailUpdate
     {
