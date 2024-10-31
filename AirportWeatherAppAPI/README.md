@@ -24,10 +24,10 @@
 
 ### Page 6 - Search Page
 -  Allows a User to search for a specific airport through a search bar.
--  
+-  Will Integrate an Airport API from an outside source.
 
-### Page 7 - ...
--
+### Page 7 - Resource Page
+-  Lists contact information for users to report errors or troubleshooting solutions.
 
 ### Page 8 ...
 -
