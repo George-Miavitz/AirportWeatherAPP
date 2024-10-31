@@ -2,6 +2,7 @@ using AirportWeatherAppAPI;
 using AirportWeatherAppAPI.Data;
 using AirportWeatherAppAPI.DiegoSPRepositories;
 using AirportWeatherAppAPI.PhillipSPRepositories;
+using AirportWeatherAppAPI.ShearerSPRepositories;
 using AirportWeatherAppAPI.TaylorSPRepositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
