@@ -3,13 +3,13 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace AirportWeatherAppAPI.Repositories
+namespace AirportWeatherAppAPI.TaylorSPRepositories
 {
-    public class FeedbackService : IFeedbackService
+    public class GetFeedbackByUserID : IGetFeedbackByUserID
     {
         private readonly DbContextClass _dbContext;
 
-        public FeedbackService(DbContextClass dbContext)
+        public GetFeedbackByUserID(DbContextClass dbContext)
         {
             _dbContext = dbContext;
         }

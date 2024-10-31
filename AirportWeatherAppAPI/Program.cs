@@ -16,6 +16,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddScoped<IAlertService, AlertService>();
 builder.Services.AddScoped<IObservationService, ObservationService>();
 
+//Taylor Builders
+builder.Services.AddScoped<IGetFeedbackByUserID, GetFeedbackByUserID>();
+builder.Services.AddScoped<IUserEmailUpdate, UserEmailUpdate>();
+
 
 builder.Services.AddDbContext<DbContextClass>();
 builder.Services.AddControllers();
