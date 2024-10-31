@@ -13,7 +13,7 @@ namespace AirportWeatherAppAPI.Controllers
         private readonly IAlertService AlertService;
         public AlertController(IAlertService alertService)
         {
-            this.AlertService = alertService;
+            this.AlertService = alertService;   
         }
         [HttpPost("addalert")]
         public async Task<IActionResult> AddAlertAsync(Alert NewAlert)
