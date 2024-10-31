@@ -1,10 +1,10 @@
-﻿/*using AirportWeatherAppAPI.Data;
+﻿using AirportWeatherAppAPI.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace AirportWeatherAppAPI.ShearerSPRepositories
 {
-    public class ObservationAddClass : IObservationAdd
+    public class ObservationAddClass : IObservationAddClass
     {
         private readonly DbContextClass _dbContext;
         public ObservationAddClass(DbContextClass dbContext)
@@ -27,4 +27,3 @@ namespace AirportWeatherAppAPI.ShearerSPRepositories
         }
     }
 }
-*/

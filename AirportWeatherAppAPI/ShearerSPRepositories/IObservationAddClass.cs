@@ -1,9 +1,6 @@
-﻿using AirportWeatherAppAPI.Data;
-
-namespace AirportWeatherAppAPI.ShearerSPRepositories
+﻿namespace AirportWeatherAppAPI.ShearerSPRepositories
 {
-    public interface IObservationAdd
+    public interface IObservationAddClass
     {
-        Task<int> ObservationAdd(int ObservationId);
     }
 }
