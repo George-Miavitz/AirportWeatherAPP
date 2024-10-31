@@ -9,23 +9,23 @@ namespace AirportWeatherAppAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserEmailUpddateController : Controller
+    public class UserEmailUpdateController : Controller
     {
         private readonly IUserEmailUpdate UserEmailUpdate;
-        public UserEmailUpddateController(IUserEmailUpdate useremailupdate)
+        public UserEmailUpdateController(IUserEmailUpdate useremailupdate)
         {
             this.UserEmailUpdate = useremailupdate;
         }
         [HttpPost("updateemail")]
-        public async Task<IActionResult> UpdateEmailAsync(User EmailUpdate)
+        public async Task<IActionResult> UpdateEmailAsync(int UserId, string Email)
         {
-            if (EmailUpdate == null)
+            if (UserId == null)
             {
                 return BadRequest();
             }
             try
             {
-                var response = await UserEmailUpdate.UpdateEmail(EmailUpdate);
+                var response = await UserEmailUpdate.UpdateEmail(UserId, Email);
                 return Ok(response);
             }
             catch

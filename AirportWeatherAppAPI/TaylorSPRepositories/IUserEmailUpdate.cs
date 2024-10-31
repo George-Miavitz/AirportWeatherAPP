@@ -4,6 +4,6 @@ namespace AirportWeatherAppAPI.TaylorSPRepositories
 {
     public interface IUserEmailUpdate
     {
-        Task<int> UpdateEmail(User EmailUpdate);
+        Task<int> UpdateEmail(int UserId, string Email);
     }
 }
