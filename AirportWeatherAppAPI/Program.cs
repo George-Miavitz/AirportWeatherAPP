@@ -1,6 +1,7 @@
 using AirportWeatherAppAPI;
 using AirportWeatherAppAPI.Data;
 using AirportWeatherAppAPI.DiegoSPRepositories;
+using AirportWeatherAppAPI.PhillipSPRepositories;
 using AirportWeatherAppAPI.TaylorSPRepositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -11,7 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
-//builder.Services.AddScoped<IPhillipWaller, PhillipWaller>();
 
 //Diego builders
 builder.Services.AddScoped<IAlertService, AlertService>();
@@ -21,6 +21,10 @@ builder.Services.AddScoped<IObservationService, ObservationService>();
 builder.Services.AddScoped<IGetFeedbackByUserID, GetFeedbackByUserID>();
 builder.Services.AddScoped<IUserEmailUpdate, UserEmailUpdate>();
 
+
+//Phillip Builders
+builder.Services.AddScoped<IDeleteOrgService, DeleteOrgService>();
+builder.Services.AddScoped<INewUserAdd, NewUserAddService>();
 
 builder.Services.AddDbContext<DbContextClass>();
 builder.Services.AddControllers();
