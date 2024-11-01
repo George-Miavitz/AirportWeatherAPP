@@ -33,7 +33,7 @@
 - Access for admins to be able to see protected information and be able to change permissions as needed.
 
 
-## API's
+## **API's**
 
 ### Taylor Miavitz
 - UserEmailUpdate
