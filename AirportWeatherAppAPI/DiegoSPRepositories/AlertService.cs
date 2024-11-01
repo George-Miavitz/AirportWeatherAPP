@@ -2,6 +2,7 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
+// Created by Diego Reyes
 namespace AirportWeatherAppAPI.DiegoSPRepositories
 {
     public class AlertService: IAlertService
@@ -12,6 +13,9 @@ namespace AirportWeatherAppAPI.DiegoSPRepositories
             _dbContext = dbContext;
         }
 
+        /* Results in a task that prompts a user to enter a UserID, ObservationID, and Communication Text
+          to add an alert.*/
+        // Will later be integrated into the Alert page on web app
         public async Task<int> AlertAdd(Alert NewAlert)
         {
             var parameter = new List<SqlParameter>();

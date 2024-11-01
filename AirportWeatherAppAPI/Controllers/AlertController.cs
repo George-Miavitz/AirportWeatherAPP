@@ -4,6 +4,7 @@ using AirportWeatherAppAPI.Data;
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 
+//Created by Diego Reyes
 namespace AirportWeatherAppAPI.Controllers
 {
     [Route("api/[controller]")]

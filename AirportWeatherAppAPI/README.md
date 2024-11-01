@@ -40,8 +40,16 @@
 - GetFeedbackByUserID
 
 ### Diego Reyes
-- ...
-- ...
+- Two API's:
+  - Alert (Adds an alert)
+  - Observation (Deletes an observation)
+- Folders:
+  - "DiegoSPRepositories"
+    - Contains the service and interface for both API's 
+  - Both controllers are in the "Controllers" folder
+    - Called:
+      - AlertController.cs
+      - ObservationController.cs
 
 ### Phillip Waller
 - ...
