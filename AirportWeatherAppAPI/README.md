@@ -36,8 +36,15 @@
 ## **API's**
 
 ### Taylor Miavitz
-- UserEmailUpdate
-- GetFeedbackByUserID
+- Two API's
+  - UserEmailUpdate.cs
+  - GetFeedbackByUserID.cs
+- Folders:
+  - "TaylorSPRepositories"
+    - Contains the services and interfaces for both API's
+  - Both Controllers are located in "Controllers" folder
+    - GetFeedbackByUserIDController.cs
+    - UserEmailUpdateController.cs
 
 ### Diego Reyes
 - Two API's:
