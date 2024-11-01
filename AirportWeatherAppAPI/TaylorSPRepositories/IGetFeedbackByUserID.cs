@@ -6,6 +6,6 @@ namespace AirportWeatherAppAPI.TaylorSPRepositories
 {
     public interface IGetFeedbackByUserID
     {
-        Task<IEnumerable<Feedback>> FeedbackSearch(int SearchFeedback);
+        Task<IEnumerable<Feedback>> FeedbackSearch(int UserID);
     }
 }
