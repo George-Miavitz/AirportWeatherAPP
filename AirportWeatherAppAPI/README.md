@@ -8,11 +8,11 @@
 
 ### Page 2 - User Page (Dynamic)
 -  Enables Users to Access their account and see their information.
--  Dynamic Page: Uses UserEmailUpdate API to allow update their email.
+-  Dynamic Page: Uses UserEmailUpdate API to allow update their email. (Taylor Miavitz)
 
 ### Page 3 - Feedback Page (Dynamic)
 -  Allows each user to leave feedback on the web application. Also, view other feedback items from other users.
--  Dynamic Page: Uses GetFeedbackByUserID to search by User's ID retrieving that users feedback items.
+-  Dynamic Page: Uses GetFeedbackByUserID to search by User's ID retrieving that users feedback items. (Taylor Miavitz)
 
 ### Page 4 - Alert Page (Dynamic)
 -  Allows for admins or top level users to prompt a immediate notice for severe weather.
@@ -31,3 +31,22 @@
 
 ### Page 8 Admin Page
 - Access for admins to be able to see protected information and be able to change permissions as needed.
+
+
+## API's
+
+### Taylor Miavitz
+- UserEmailUpdate
+- GetFeedbackByUserID
+
+### Diego Reyes
+- ...
+- ...
+
+### Phillip Waller
+- ...
+- ...
+
+### Henry Shearer
+- ...
+- ...
