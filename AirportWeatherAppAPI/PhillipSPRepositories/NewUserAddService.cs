@@ -7,7 +7,7 @@ namespace AirportWeatherAppAPI.PhillipSPRepositories
     public class NewUserAddService : INewUserAdd
     {
         private readonly DbContext _dbContext;
-        public NewUserAddService(DbContext dbContext)
+        public NewUserAddService(DbContextClass dbContext)
         {
             _dbContext = dbContext;
         }
@@ -16,7 +16,7 @@ namespace AirportWeatherAppAPI.PhillipSPRepositories
             var parameter = new List<SqlParameter>();
             parameter.Add(new SqlParameter("@Username", NewUser.UserName));
             parameter.Add(new SqlParameter("@Email", NewUser.Email));
-            parameter.Add(new SqlParameter("@Password", NewUser.Password))
+            parameter.Add(new SqlParameter("@Password", NewUser.Password));
             return await _dbContext.Database.ExecuteSqlRawAsync("exec spUserAdd @Username, @Email, @Password", parameter.ToArray());
 
         }
