@@ -1,0 +1,36 @@
+﻿@page
+@model AirportWeatherAPP.Pages.OrganizationCRUD.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.WeatherDataOrg[0].OrgName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.WeatherDataOrg) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrgName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.OrgId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.OrgId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.OrgId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
