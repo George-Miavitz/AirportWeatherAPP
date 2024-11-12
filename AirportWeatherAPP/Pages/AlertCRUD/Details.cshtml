@@ -1,0 +1,37 @@
+﻿@page
+@model AirportWeatherAPP.Pages.AlertCRUD.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Alert</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alert.CommunicationText)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alert.CommunicationText)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alert.Observation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alert.Observation.ObservationId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alert.User)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alert.User.UserId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Alert.AlertId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,48 @@
+﻿@page
+@model AirportWeatherAPP.Pages.AlertCRUD.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Alert[0].CommunicationText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alert[0].Observation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alert[0].User)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Alert) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommunicationText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observation.ObservationId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserId)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.AlertId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.AlertId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.AlertId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
