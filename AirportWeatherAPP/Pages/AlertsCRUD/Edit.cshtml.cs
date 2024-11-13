@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AirportWeatherAPP.Data;
 
-namespace AirportWeatherAPP.Pages.AlertCRUD
+namespace AirportWeatherAPP.Pages.AlertsCRUD
 {
     public class EditModel : PageModel
     {

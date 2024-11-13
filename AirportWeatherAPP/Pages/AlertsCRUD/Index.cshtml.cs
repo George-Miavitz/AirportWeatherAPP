@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AirportWeatherAPP.Data;
 
-namespace AirportWeatherAPP.Pages.AlertCRUD
+namespace AirportWeatherAPP.Pages.AlertsCRUD
 {
     public class IndexModel : PageModel
     {
