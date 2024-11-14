@@ -22,6 +22,9 @@ builder.Services.AddScoped<IObservationService, ObservationService>();
 builder.Services.AddScoped<IGetFeedbackByUserID, GetFeedbackByUserID>();
 builder.Services.AddScoped<IUserEmailUpdate, UserEmailUpdate>();
 
+//Henry Builders
+builder.Services.AddScoped<IObservationAddClass, ObservationAddClass>();
+builder.Services.AddScoped<IWeatherOrgAddClass, WeatherOrgAddClass>();
 
 //Phillip Builders
 builder.Services.AddScoped<IDeleteOrgService, DeleteOrgService>();
