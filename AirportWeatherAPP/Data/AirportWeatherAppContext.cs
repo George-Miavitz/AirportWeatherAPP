@@ -61,10 +61,10 @@ public partial class AirportWeatherAppContext : DbContext
             entity.Property(e => e.Timestamp).HasColumnType("datetime");
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Feedbacks)
-                .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Feedback__UserID__6FE99F9F");
+            //entity.HasOne(d => d.User).WithMany(p => p.Feedbacks)
+            //    .HasForeignKey(d => d.UserId)
+            //    .OnDelete(DeleteBehavior.ClientSetNull)
+            //    .HasConstraintName("FK__Feedback__UserID__6FE99F9F");
         });
 
         modelBuilder.Entity<Observation>(entity =>
