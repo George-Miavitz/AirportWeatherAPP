@@ -13,7 +13,7 @@ public partial class Alert
 
     public string? CommunicationText { get; set; }
 
-    public virtual Observation Observation { get; set; } = null!;
+    //public virtual Observation Observation { get; set; } = null!;
 
-    public virtual User User { get; set; } = null!;
+    //public virtual User User { get; set; } = null!;
 }

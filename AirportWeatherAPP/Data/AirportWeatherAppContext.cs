@@ -38,7 +38,7 @@ public partial class AirportWeatherAppContext : DbContext
             entity.Property(e => e.CommunicationText).HasMaxLength(255);
             entity.Property(e => e.ObservationId).HasColumnName("ObservationID");
             entity.Property(e => e.UserId).HasColumnName("UserID");
-
+            /*
             entity.HasOne(d => d.Observation).WithMany(p => p.Alerts)
                 .HasForeignKey(d => d.ObservationId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -47,7 +47,8 @@ public partial class AirportWeatherAppContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Alerts)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Alerts__UserID__6C190EBB");
+                .HasConstraintName("FK__Alerts__UserID__6C190EBB"); 
+            */
         });
 
         modelBuilder.Entity<Feedback>(entity =>
