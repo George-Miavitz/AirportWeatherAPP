@@ -20,8 +20,6 @@ namespace AirportWeatherAPP.Pages.AlertsCRUD
 
         public IActionResult OnGet()
         {
-        ViewData["ObservationId"] = new SelectList(_context.Observations, "ObservationId", "ObservationId");
-        ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId");
             return Page();
         }
 

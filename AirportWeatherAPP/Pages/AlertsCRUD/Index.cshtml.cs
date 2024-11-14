@@ -22,9 +22,7 @@ namespace AirportWeatherAPP.Pages.AlertsCRUD
 
         public async Task OnGetAsync()
         {
-            Alert = await _context.Alerts
-                .Include(a => a.Observation)
-                .Include(a => a.User).ToListAsync();
+            Alert = await _context.Alerts.ToListAsync();
         }
     }
 }

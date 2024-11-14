@@ -16,12 +16,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Alert[0].CommunicationText)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Alert[0].Observation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Alert[0].User)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -30,12 +24,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.CommunicationText)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Observation.ObservationId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.UserId)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.AlertId">Edit</a> |
