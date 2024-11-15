@@ -17,6 +17,12 @@
 - ...
 
 ### Henry Shearer
-- ...
+- Razor Pages
+  - UserCRUD
+  - ObservationCRUD
+- CRUD Functionality
+  - Create, Delete, Details, and Edit
+  
+
 
 
