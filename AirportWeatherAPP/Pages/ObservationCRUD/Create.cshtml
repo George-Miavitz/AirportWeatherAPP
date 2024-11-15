@@ -1,0 +1,67 @@
+﻿@page
+@model AirportWeatherAPP.Pages.ObservationCRUD.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Observation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Observation.UserId" class="control-label"></label>
+                <select asp-for="Observation.UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observation.OrgId" class="control-label"></label>
+                <select asp-for="Observation.OrgId" class ="form-control" asp-items="ViewBag.OrgId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observation.Descriptor" class="control-label"></label>
+                <input asp-for="Observation.Descriptor" class="form-control" />
+                <span asp-validation-for="Observation.Descriptor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observation.Timestamp" class="control-label"></label>
+                <input asp-for="Observation.Timestamp" class="form-control" />
+                <span asp-validation-for="Observation.Timestamp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observation.Temperature" class="control-label"></label>
+                <input asp-for="Observation.Temperature" class="form-control" />
+                <span asp-validation-for="Observation.Temperature" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observation.WindSpeed" class="control-label"></label>
+                <input asp-for="Observation.WindSpeed" class="form-control" />
+                <span asp-validation-for="Observation.WindSpeed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observation.WindDirection" class="control-label"></label>
+                <input asp-for="Observation.WindDirection" class="form-control" />
+                <span asp-validation-for="Observation.WindDirection" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observation.Visibility" class="control-label"></label>
+                <input asp-for="Observation.Visibility" class="form-control" />
+                <span asp-validation-for="Observation.Visibility" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

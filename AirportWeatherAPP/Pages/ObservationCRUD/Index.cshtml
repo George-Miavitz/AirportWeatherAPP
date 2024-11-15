@@ -1,0 +1,78 @@
+﻿@page
+@model AirportWeatherAPP.Pages.ObservationCRUD.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Observation[0].Descriptor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observation[0].Timestamp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observation[0].Temperature)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observation[0].WindSpeed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observation[0].WindDirection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observation[0].Visibility)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observation[0].Org)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observation[0].User)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Observation) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descriptor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Timestamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Temperature)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WindSpeed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WindDirection)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Visibility)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Org.OrgId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserId)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ObservationId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ObservationId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ObservationId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
