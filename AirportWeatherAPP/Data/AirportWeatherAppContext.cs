@@ -81,6 +81,7 @@ public partial class AirportWeatherAppContext : DbContext
             entity.Property(e => e.WindDirection).HasMaxLength(50);
             entity.Property(e => e.WindSpeed).HasColumnType("decimal(5, 2)");
 
+            /*
             entity.HasOne(d => d.Org).WithMany(p => p.Observations)
                 .HasForeignKey(d => d.OrgId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -90,6 +91,7 @@ public partial class AirportWeatherAppContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Observati__UserI__68487DD7");
+            */
         });
 
         modelBuilder.Entity<User>(entity =>

@@ -16,12 +16,12 @@
             <input type="hidden" asp-for="Observation.ObservationId" />
             <div class="form-group">
                 <label asp-for="Observation.UserId" class="control-label"></label>
-                <select asp-for="Observation.UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                <input asp-for="Observation.UserId" class="form-control" asp-items="ViewBag.UserId"/>
                 <span asp-validation-for="Observation.UserId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Observation.OrgId" class="control-label"></label>
-                <select asp-for="Observation.OrgId" class="form-control" asp-items="ViewBag.OrgId"></select>
+                <input asp-for="Observation.OrgId" class="form-control" asp-items="ViewBag.OrgId"/>
                 <span asp-validation-for="Observation.OrgId" class="text-danger"></span>
             </div>
             <div class="form-group">
