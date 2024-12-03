@@ -1,6 +1,135 @@
-# _**Airport Weather Application**_
+# _**Airport Weather Application**_#
 
-## **Project Overview**
+## _**Deployment Guide_*##
+
+- Step 1: Open your preferred virtual machine.
+- Step 2: Necessary Applications
+	- Microsoft SQL Server Management Studio
+	- Microsoft Visual Studio 
+	- Git
+- Step Three: Clone Github Repository
+	- Paste provided link into new Visual Studio Project.
+- Step Four: Set Up the Database
+	-  Since you're using a authorized virtual machine open SQL Server Management Studio connect to server "labH7sr1j".
+	- Using the Github SQL folder navigate to "DatabaseCreation.sql" and "DatabaseData.sql" which will need to be sequentially pasted into the new database.
+- Step Five: Configure and Run the Web App
+
+## _**Common Pitfalls**_##
+
+- Connection String Errors
+- Data Migration Error
+- Outdated Software and Programs
+
+## _**Resources**_##
+
+- [W3 Schools](https://www.w3schools.com/)
+- GitHub Repository README.md files
+- [StackOverflow](https://stackoverflow.com/)
+
+
+## _**API Documentation**_##
+
+
+- **UserCRUD**
+- API Functionality
+  - Create new user and Edit existing User
+	- Inputs
+		- UserName
+		- Email
+		- Password
+	- Output
+		- Updated Information	
+  - Details / Delete
+	- Detail of each user
+	- Input/ Output
+		- On Click
+
+
+- **FeedbackCRUD**
+- API Functionality
+  - Create new feedback and Edit existing Feedback
+	- Inputs
+		- UserId
+		- Text (Feedback)
+		- Timestamp
+	- Output
+		- Updated Information
+  - Details / Delete
+	- Detail of selected feedback 
+	- Input/ Output
+		- On Click
+
+ 
+- **AlertsCRUD**
+-  API Functionality
+  - Create new feedback and Edit existing Alerts
+	- Inputs
+		- UserId
+		- ObservationId
+		- Communication Text
+	- Output
+		- Updated Information
+  - Details / Delete
+	- Detail of selected feedback 
+	- Input/ Output
+		- On Click
+
+
+- **OrganizationCRUD**
+- API Functionality
+  - Create new feedback and Edit existing Organization
+	- Inputs
+		- OrgName
+	- Output
+		- Updated Information
+  - Details / Delete
+	- Detail of selected Organization 
+	- Input/ Output
+		- On Click
+
+
+- **ObservationCRUD**
+- API Functionality
+  - Create new feedback and Edit existing Observation
+	- Inputs
+		- UserId
+		- OrgId
+		- Descriptor
+		- Timestamp
+		- Temperature
+		- WindSpeed
+		- WindDirection
+		- Visibility
+	- Output
+		- Updated Information
+  - Details / Delete
+	- Detailed List of selected Organization 
+	- Input/ Output
+		- On Click
+
+
+## _**Developer Documentation**_##
+ 
+- SearchPage.cshtml is not functional as of 12/3/2024.
+ - Outside API can be integrated or you can create your own.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## **Application Overview**
 
 - This application is designed to work as an internal search application for airports. It will be able to pull weather data from an API by using a search function. 
  The end user will be able to search for an airport and see its current weather conditions along with a prediction of future weather. In the current development, 
